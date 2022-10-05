@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+.box img {
+    object-fit: cover;
+    width: 800px;
+    position: relative;
+    left: 380px;
+    background: transparent;
+    top: 100px;
+    height: 300px;
+}
+.main {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    left: 670px;
+    animation-name: animate;
+    animation-duration: 5s;
+    background: yellow;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+@keyframes animate {
+    0% {
+        left: 670px;
+        top: 0px;
+    }
+    25% {
+        left: 670px;
+        top: 50px;
+    }
+    50% {
+        left: 670px;
+        top: 100px;
+    }
+    75% {
+        left: 670px;
+        top: 150px;
+    }
+    100% {
+        left: 670px;
+        top: 200px;
+    }
+
+    
+}

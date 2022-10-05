@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.boxing .box {
+    width: 400px;
+    background: yellow;
+    margin: 0 auto;
+    position: relative;
+    top: calc(100vh - 75vh);
+    animation-name: animate;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: 999;
+    height: 400px;
+}
+
+@keyframes animate {
+    0% {
+        background-color: red;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+
+    15% {
+        background-color: rgb(255, 60, 0);
+        width: 130px;
+        height: 130px;
+    }
+
+    30% {
+        background-color: orangered;
+        width: 180px;
+        height: 180px;
+    }
+
+    45% {
+        background-color: rgb(242, 186, 32);
+        width: 230px;
+        height: 230px;
+    }
+
+    60% {
+        background-color: orange;
+        width: 280px;
+        height: 280px;
+    }
+    75% {
+        background-color: rgb(255, 213, 0);
+        width: 330px;
+        height: 330px;
+    }
+
+    100% {
+        background-color: yellow;
+        width: 400px;
+        height: 400px;
+    }
+}

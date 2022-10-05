@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+.container h1 {
+    color: aqua;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    left: 550px;
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    position: relative;
+    top: 250px;
+}
+@keyframes animate {
+    0% {
+        font-size: 0px;
+    }
+    25% {
+        font-size: 30px;
+    }
+    50% {
+        font-size: 60px;
+    }
+    75% {
+        font-size: 90px;
+    }
+    100% {
+        font-size: 120px;
+    }
+}

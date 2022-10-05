@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: blue;
+    display: flex;
+}
+
+.boxing {
+    width: 80%;
+    min-height: 600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid white;
+}
+
+.boxing .box {
+    width: 600px;
+    height: 600px;
+    border: 3px solid black;
+}
+
+/* @media screen and (max-width:576px) {
+    .boxing .box {
+        width: 80%;
+        margin: auto;
+        height: 400px;
+    }
+
+} */

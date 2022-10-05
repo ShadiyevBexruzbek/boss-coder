@@ -1,0 +1,825 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Commissioner:wght@100;200;300;400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gloria+Hallelujah&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Homemade+Apple&family=Imperial+Script&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Krona+One&family=Lexend+Zetta:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Mochiy+Pop+One&family=Nabla&family=Pacifico&family=Passions+Conflict&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reem+Kufi+Ink&family=Secular+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    background: #0A0A0B;
+    overflow: hidden;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background: #0A0A0B;
+}
+
+nav .logo,
+.menu {
+    width: 50%;
+    height: 80px;
+}
+
+nav .logo i {
+    color: white;
+    position: relative;
+    top: 25px;
+    font-size: 25px;
+    left: 110px;
+}
+
+nav .logo h1 {
+    color: white;
+    position: relative;
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    left: 150px;
+}
+
+nav .menu ul {
+    display: flex;
+    gap: 60px;
+
+}
+
+nav .menu ul li {
+    color: #fff;
+    list-style: none;
+    font-family: 'Exo';
+    font-style: normal;
+    position: relative;
+    top: 28px;
+    left: 150px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+header {
+    width: 100%;
+    min-height: calc(1200px - 80px);
+}
+
+header h1 {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 140%;
+    display: flex;
+    position: relative;
+    top: 50px;
+    justify-content: center;
+    color: #FFFFFF;
+
+}
+
+header h2 {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 140%;
+    position: relative;
+    top: 70px;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+header .xmm i {
+    color: blue;
+    position: relative;
+    top: 100px;
+    left: 700px;
+}
+
+header span {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+    color: #BABEC4;
+}
+
+header img {
+    position: relative;
+    top: 130px;
+    left: 600px;
+}
+
+header .boxing {
+    display: flex;
+}
+
+header .boxing .box {
+    /* display: flex;
+    flex-direction: column;
+    gap: 100px; */
+    margin: 0 100px;
+}
+
+header .boxing .box i {
+    position: relative;
+    top: 170px;
+    left: 410px;
+    font-size: 25px;
+    color: #fff;
+}
+
+header .boxing .box h3 {
+    position: relative;
+    left: 400px;
+    top: 200px;
+    color: #fff;
+    font-size: xx-large;
+}
+
+header .boxing .box p {
+    position: relative;
+    top: 230px;
+    left: 390px;
+    color: grey;
+}
+
+header .start {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: 350px;
+    left: 660px;
+    border-radius: 50%;
+    box-shadow: 0 0 80px 0 green;
+    border: 3px solid green;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+header .start .end {
+    width: 200px;
+    position: relative;
+    left: 22px;
+    top: 22px;
+    height: 200px;
+    border: 3px solid green;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+header .start .end h1 {
+    position: relative;
+    top: 65px;
+}
+
+main {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+}
+
+main .left,
+.right {
+    width: 50%;
+    min-height: 600px;
+}
+
+main .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .right h1 {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 600;
+    position: relative;
+    top: 150px;
+    font-size: 35px;
+    line-height: 140%;
+    color: #F1F2F3;
+
+}
+
+main .right p {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    position: relative;
+    top: 180px;
+    color: #BABEC4;
+}
+
+main .right button {
+    width: 150px;
+    background: #6363bb;
+    color: white;
+    height: 50px;
+    border-radius: 10px;
+    position: relative;
+    top: 250px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.header {
+    width: 100%;
+    min-height: 700px;
+}
+
+.header .tak h1 {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 140%;
+    text-align: center;
+    color: #F1F2F3;
+
+}
+
+.header .boxing {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header .boxing .box {
+    width: 400px;
+    min-height: 500px;
+    border-radius: 10px;
+    position: relative;
+    top: 100px;
+    background: #1b1c1d;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.header .boxing .box h2 {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 600;
+    position: relative;
+    top: 50px;
+    left: 40px;
+    font-size: 30px;
+    line-height: 140%;
+    color: #F1F2F3;
+
+}
+
+.header .boxing .box p {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    position: relative;
+    top: 50px;
+    left: 40px;
+    line-height: 140%;
+    color: #BABEC4;
+
+}
+
+.header .boxing .box img {
+    position: relative;
+    left: 100px;
+    object-fit: cover;
+    width: 270px;
+    height: 130px;
+    top: 80px;
+}
+
+/* 
+.header .boxing .box i {
+    font-size: 30px;
+    color: #fff;
+    position: relative;
+    display: flex;
+    top: 150px;
+    margin: 10px 0;
+    right: 450px;
+} */
+/* .header .boxing .box span {
+    color: #fff;
+    position: relative;
+    top: 150px;
+
+    
+} */
+.header .boxing .box h1 {
+    color: #fff;
+    position: relative;
+    top: 200px;
+    left: 50px;
+}
+
+.header .boxing .box i {
+    position: relative;
+    top: 200px;
+    font-size: 50px;
+    color: blue;
+    /* display: inline-block;
+    width: 100px;
+    border-radius: 20px;
+    height: 50px;
+    border: 2px solid red; */
+    left: 330px;
+
+}
+
+.rasm {
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* .rasm h1 {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 140%;
+    position: relative;
+    top: 70px;
+    text-align: center;
+    color: #F1F2F3;
+} */
+.rasm img {
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.car {
+    width: 100%;
+    min-height: 1500px;
+}
+
+.car .zog h1 {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 140%;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    color: #F1F2F3;
+
+}
+
+.car .ob {
+    display: flex;
+}
+
+.car .ob .wh {
+    width: 65px;
+    height: 65px;
+    top: 150px;
+    left: 550px;
+    border-radius: 10px;
+    margin: 0 20px;
+    border: 1px solid grey;
+    position: relative;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.car .ob .wh h1 {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    line-height: 140%;
+    color: #F1F2F3;
+}
+
+.car .ob .wh img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.car .boxing {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+
+}
+
+.car .boxing .box {
+    width: 350px;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    height: 450px;
+    position: relative;
+    top: 250px;
+    background: #111213;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.car .boxing .box h2 {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    line-height: 140%;
+    color: #F1F2F3;
+}
+
+.car .boxing .box p {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    position: relative;
+    top: 40px;
+    left: 30px;
+    color: #BABEC4;
+
+}
+
+.car .boxing .box img {
+    position: relative;
+    top: 70px;
+    left: 30px;
+    width: 280px;
+    object-fit: contain;
+    height: 150px;
+}
+
+.car .boxing .box h1 {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    position: relative;
+    top: 150px;
+    left: 50px;
+    line-height: 140%;
+    color: #F1F2F3;
+
+}
+
+.car .boxing .box i {
+    color: blue;
+    font-size: 50px;
+    position: relative;
+    top: 220px;
+}
+
+/* .car .boxing .box:nth-child(4) {
+    position: relative;
+    top: 800px;
+    right: 700px;
+}
+
+.car .boxing .box:nth-child(5) {
+    position: relative;
+    top: 800px;
+    right: 700px;
+} */
+.nima {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nima .dam {
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
+    position: relative;
+    top: 350px;
+    background: #111213;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.nima .dam h2 {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    position: relative;
+    left: 30px;
+    top: 30px;
+    line-height: 140%;
+    color: #F1F2F3;
+}
+
+.nima .dam p {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    line-height: 140%;
+    color: #BABEC4;
+}
+
+.nima .dam img {
+    width: 290px;
+    position: relative;
+    height: 150px;
+    object-fit: contain;
+    top: 90px;
+    left: 25px;
+}
+
+.nima .dam h1 {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 140%;
+    position: relative;
+    top: 150px;
+    left: 50px;
+    color: #F1F2F3;
+
+}
+
+.nima .dam i {
+    color: blue;
+    font-size: 50px;
+    position: relative;
+    left: 270px;
+    top: 120px;
+}
+
+.footer {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    background: #242728;
+}
+
+.footer .left,
+.right {
+    width: 50%;
+}
+
+.footer .left h1 {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 140%;
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    color: #F1F2F3;
+
+}
+
+.footer .left p {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    position: relative;
+    top: 150px;
+    padding: 0 150px;
+    color: #BABEC4;
+
+}
+
+.footer .left button {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 500;
+    background: #4177DC;
+    border: none;
+    width: 150px;
+    min-height: 50px;
+    position: relative;
+    top: 250px;
+    left: 150px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.footer .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .right img {
+    object-fit: contain;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.main {
+    width: 100%;
+    min-height: 200px;
+}
+
+.main .image {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.main .image img {
+    object-fit: contain;
+    position: relative;
+    top: 60px;
+    width: 150px;
+    height: 100px;
+}
+
+footer {
+    width: 100%;
+    padding-top: 150px;
+    display: flex;
+}
+
+footer .left,
+.start,
+.center,
+.right {
+    width: 25%;
+}
+
+footer .left i {
+    font-size: 30px;
+    color: #fff;
+    position: relative;
+    left: 50px;
+    top: 70px;
+}
+
+footer .left h1 {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 140%;
+    position: relative;
+    top: 28px;
+    left: 100px;
+    color: #FFFFFF;
+}
+
+footer .left p {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0 50px;
+    position: relative;
+    top: 70px;
+    line-height: 140%;
+    color: #BABEC4;
+}
+
+footer .start h1 {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 600;
+    position: relative;
+    top: 55px;
+    left: 100px;
+    font-size: 40px;
+    line-height: 140%;
+    color: #F1F2F3;
+}
+
+footer .start ul li {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    list-style: none;
+    position: relative;
+    top: 50px;
+    margin: 20px 0;
+    left: 100px;
+    line-height: 140%;
+    color: #BABEC4;
+}
+
+footer .center h1 {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    position: relative;
+    top: 50px;
+    left: 70px;
+    line-height: 140%;
+    color: #F1F2F3;
+
+}
+
+footer .center ul li {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    top: 50px;
+    list-style: none;
+    margin: 20px 0;
+    left: 75px;
+    font-size: 20px;
+    line-height: 140%;
+    color: #BABEC4;
+
+}
+
+footer .right h1 {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    position: relative;
+    top: 50px;
+    left: 100px;
+    line-height: 140%;
+    color: #F1F2F3;
+}
+
+footer .right i {
+    font-size: 30px;
+    color: #fff;
+    position: relative;
+    top: 100px;
+    margin: 0 20px;
+    left: 80px;
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        flex-wrap: wrap;
+
+    }
+
+}
+
+@media (max-width:576px) {
+    nav {
+        color: red;
+    }
+}
